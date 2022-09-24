@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0
 }
 
 body {
@@ -9,48 +10,44 @@ body {
 }
 
 header {
-    width:100%;
-    padding: 10px;
-    background-color: cadetblue;
-    color: white;
+    display: flex;
+    background-color: lightskyblue;
 }
 
-header nav {
-    float:right;
+img {
+    display:inline-block;
+    float:none;
+    vertical-align:middle;
+    border-radius: 50%;
 }
 
-li {
-    display: inline;
+
+header nav ul li {
     list-style-type: none;
-}
-#ying {
-    padding:10px;
-    border-radius: 20%;
-    float: left;
+    padding: 0px;
+    background-color: rgb(204, 238, 103);
+    
 }
 
-h1 {
-    padding-top: 15px;
-    display: inline-block;
-    font-size: 48px;
+header nav ul li a {
+    display: block;
+    text-decoration: underline;
 }
 
-#banner {
-    width: 2000px;
-    height: 200px;
-    position:relative;
 
+/* 
+#banner{
+    display:inline-block;
+    width: 1200px;
+    height:250px;
+    opacity: 0.5;
 }
 
-.subtitle {
-    float: inline-end;
-}
 
-.job {
-    border: 5px solid rgb(17, 211, 211);
-}
+
 
 footer {
     color:gray;
     text-align: center;
-}
+} */
+
