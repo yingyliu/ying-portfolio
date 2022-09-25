@@ -17,9 +17,6 @@ header {
     color: white;
 }
 
-header img {
-    border-radius: 30%;
-}
 
 div {
     display: flex;
@@ -37,9 +34,11 @@ li {
     display: inline;
     list-style-type: none;
 }
+
 #ying {
-    padding:10px;
+    border: 2px solid burlywood; 
     border-radius: 50%;
+    box-shadow: 2px 2px 2px;
 
 }
 
@@ -70,27 +69,31 @@ main {
     margin: 20px;
 }
 
-#about-me {
+section {
     display: flex;
     align-items: center;
 }
 
 main h2 {
-    border-right: 1px solid red;
+    border-right: 5px solid rgb(60, 12, 157);
     padding: 50px;
 }
 
-#work {
+/* #work {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
+} */
 
 
 .job {
     border: 5px solid rgb(17, 211, 211);
 }
 
+/* #contact-me {
+    display: flex;
+    align-items: center;
+} */
 
 footer {
     color:gray;
