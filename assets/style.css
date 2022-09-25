@@ -33,6 +33,7 @@ nav {
 li {
     display: inline;
     list-style-type: none;
+    padding: 0;
 }
 
 #ying {
@@ -85,15 +86,37 @@ main h2 {
     align-items: center;
 } */
 
-
-.job {
+.job .job1 {
+    display: flex;
+    justify-content: space-evenly;
     border: 5px solid rgb(17, 211, 211);
 }
 
-/* #contact-me {
-    display: flex;
-    align-items: center;
-} */
+.job1 {
+    display: inline-block;
+    width: 1000px;
+    height: 250px;
+}
+
+
+
+.job { 
+    display: inline-block;
+    width: 400px;
+    height: 150px;
+
+}
+
+#contact-me ul {
+    display:flex;
+    
+}
+
+#contact-me ul li a {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: underline;
+}
 
 footer {
     color:gray;
