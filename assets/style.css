@@ -23,23 +23,30 @@ header {
     border: 2px solid burlywood; 
     border-radius: 50%;
     box-shadow: 2px 2px 2px;
+    margin: 10px;
 }
 
-/* header #ying div h1 {
-    background-color: aquamarine;
-} */ 
-
-header div {
+header .left-header {
     display: flex;
     align-items: center ;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: flex-start;
+    background-color: aquamarine;
+    padding: 30px;
+}
+
+header .right-header {
+    display: flex;
+    align-items: center ;
+    justify-content: flex-end;
+    width: 80%;
+
 }
 
 h1 {
     display: inline;
-    font-size: 72px;
+    font-size: 48px;
     margin: 10px;
+    color: cadetblue;
 }
 
 header div ul {
@@ -58,7 +65,7 @@ header div ul li:hover {
 }
 
 header div ul li a {
-    color: white;
+    color: aquamarine;
     text-decoration: underline;
 }
 /* header setting end */
@@ -69,17 +76,19 @@ nav {
     align-items: end;
     justify-content: flex-end;
     background-color: beige;
-}
-
-#banner {
-    width: 1000px;
-    height: 250px;
-    opacity: 0.5;
-    border-radius: 50%;
+    background-image: url("./images/oil-painting.jpg");/*must have?*/ 
+    background-position: center;
+    background-size: 100%;
+    height: 300px;
 }
 
 .subtitle {
     padding: 20px;
+    background-color: aquamarine;
+    position: relative;
+    top: -20px;
+    left: -20px;
+    font-size: 20px;
 }
 /* navbar end*/
 
@@ -99,54 +108,83 @@ main {
 section {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 main h2 {
-    border-right: 5px solid rgb(60, 12, 157);
-    padding: 250px;
-    font-size: 48px;/*to be cont'd*/
+    padding-right: 27px;
+    font-size: 48px;
+    width: 240px;
+    text-align:right;
+    align-self: flex-start;
+    color:darkcyan;
+
 }
 
-/* #work {
+.content {
+    width: 100%;
+    max-width: 60%;
+    border-left: 5px solid darkcyan;
+    padding-left: 50px;
+    font-size: 30px;
+}
+
+
+.card {
+    position: relative;
+    border: 8px solid cadetblue;
+    width: 50%;
+    margin: 10px;
+}
+
+.card img {
+    opacity: 0.5;
+    transition: all 0.5s;
+}
+
+.card img:hover {
+    opacity: 1;
+}
+
+.company {
+    background-color: cadetblue;
+    position:absolute;
+    bottom: 30px;
+    padding: 15px;
+}
+
+#card1 {
+    width: 100%
+}
+
+.content-card {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-} */
-
-.job .job1 {
-    display: flex;
-    justify-content: space-evenly;
-    border: 5px solid rgb(17, 211, 211);
+    margin-bottom: 10px;
 }
-
-.job1 {
-    display: inline-block;
-    width: 1000px;
-    height: 250px;
-}
-
-
 
 .job { 
     display: inline-block;
-    width: 400px;
-    height: 150px;
+    width: 100%;
+}
 
+
+.job1  {
+    display: inline-block;
+    width: 100%;
 }
 
 #contact-me ul {
     display:flex;
-    
+    justify-content:center;
+    font-size: 32px;
 }
 
-#contact-me ul li a {
+#contact-me ul li {
     display: inline-block;
-    padding: 20px;
+    padding: 40px;
     text-decoration: underline;
+    color:  rgb(51, 85, 86);
 }
 
-footer {
-    color:gray;
-    text-align: center;
-}
 

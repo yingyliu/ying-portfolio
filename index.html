@@ -2,18 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ying Ying Liu's Portfolio</title>
-    <link rel="stylesheet" href="./assets/style.css"/>
+    <link rel="stylesheet" href="./assets/style.css" />
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <img id="ying" src="./assets/images/yingyingliu.jpg" width="80px" height="100px" alt="yingying">
-        <div>
+        <div class="left-header">
+            <img id="ying" src="./assets/images/yingyingliu.jpg" width="80px" height="100px" alt="yingying">
             <h1>Ying Ying Liu</h1>
+        </div>
+        <div class="right-header">
             <ul>
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#work">Work</a></li>
@@ -24,9 +26,11 @@
 
     <!-- Navbar -->
     <nav>
-        <img id="banner" src="./assets/images/oil-painting.jpg" alt="banner">
-        <p class="subtitle">"A picture is worth a thousand words" --<i>Fred R. Barnard</i></p>
-        <p class="subtitle">⭐ This bar picture is from my oil painting. ⭐</p>
+        <!-- <img id="banner" src="./assets/images/oil-painting.jpg" alt="banner"> -->
+        <div class="subtitle">
+            <p>"A picture is worth a thousand words" --<i>Fred R. Barnard</i></p>
+            <p>⭐ This bar picture is from my oil painting. ⭐</p>
+        </div>
     </nav>
 
     <!-- Body -->
@@ -34,55 +38,79 @@
         <!-- Info about me -->
         <section id="about-me">
             <h2>About Me</h2>
-            <ul>
-                <li><em>Dependable:</em> I am a person who is great at time management.</li>
-                <li><em>Energetic:</em> I am always eager to learn new skills.</li>
-                <li><em>Motivated:</em> I go to the gym after work to get fit and healthy.</li>
-            </ul>
-            <br>
-            <br>
-                <p>Key Skills |</p>
-                <p>| Microsoft Word | PowerPoint | Excel | HTML | CSS |</p> 
-            <br>
-            <br>
-                <p>Languages |</p>
-                <p>| Chinese | English | Programming Language |</p>
+            <div class="content">
+                <p>
+                    Hi, I’m Ying Ying! I’m from Taipei. I started a business in tourism because I have a strong passion for helping people and wanted to inspire others to start traveling and exploring the world, too. After many years of trying to find a job that reflected my love for traveling, I decided to take matters into my own hands and start my own business.
+                </p>
+                <br>
+                <p>
+                    Since I started my business in tourism in 2015, it’s quickly become one of the most popular tourism agencies in Taipei. I’ve been in your shoes before, so here at my service my goal is to help you to plan your travel for leisure around the world.
+                </p>
+            </div>
         </section>
 
         <section id="work">
             <h2>Work</h2>
-            <img class="job1" src="./assets/images/dupont-logo.png" alt="DuPont">
-            <p>DuPont | Taiwan</p>
-            <p>Admin Assistant</p>
-            <img class="job" src="./assets/images/goeugo-logo.png" alt="GOEUGO">
-            <p>GOEUGO Travel | Taiwan</p>
-            <p>Sales Representative</p>
-            <img class="job" src="./assets/images/uplan-travel-logo.png" alt="uplan">
-            <p>UPlan Travel | Taiwan</p>
-            <p>Sales Representative</p>
-            <img class="job" src="./assets/images/iga-logo.png" alt="IGA supermarket">
-            <p>SUPA IGA | Australia</p>
-            <p>Deli Assistant</p>
-            <img class="job" src="./assets/images/avexir-logo.png" alt="Avexir Tech Co">
-            <p>AVEXIR Tec. Co. | Taiwan</p>
-            <p>Sales Representative</p>
+            <div class="content">
+                <!-- article -->
+                <div class="content-card">
+                    <div class="card" id="card1">
+                        <div class="company">
+                            <p>DuPont | Taiwan</p>
+                            <p>Admin Assistant</p>
+                        </div>
+                        <img class="job1" src="./assets/images/dupont.jpeg" alt="DuPont">
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="card">
+                        <div class="company">
+                            <p>GOEUGO Travel | Taiwan</p>
+                            <p>Sales Representative</p>
+                        </div>
+                        <img class="job" src="./assets/images/goeugo-logo.png" alt="GOEUGO">
+                    </div>
+                    <div class="card">
+                        <div class="company">
+                            <p>UPlan Travel | Taiwan</p>
+                            <p>Sales Representative</p>
+                        </div>
+                        <img class="job" src="./assets/images/uplan-travel-logo.png" alt="uplan">
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="card">
+                        <div class="company">
+                            <p>SUPA IGA | Australia</p>
+                            <p>Deli Assistant</p>
+                        </div>
+                        <img class="job" src="./assets/images/iga-logo.jpeg" alt="IGA supermarket">
+                    </div>
+                    <div class="card">
+                        <div class="company">
+                            <p>AVEXIR Tec. Co. | Taiwan</p>
+                            <p>Sales Representative</p>
+                        </div>
+                        <img class="job" src="./assets/images/avexir-logo.png" alt="Avexir Tech Co">
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <section id="contact-me">
             <h2>Contact Me</h2>
-            <ul>
-                <li><a href="#"></a>650.000.1234</li>
-                <li><a href="#"></a>ying@website.com</li>
-                <li><a href="#"></a>GitHub</li>
-                <li><a href="#"></a>LinkedIn</li>
-            </ul>
+            <div class="content">
+                <ul>
+                    <li>650.001.2345</li>
+                    <li>ying888888@website.com</li>
+                    <li>GitHub</li>
+                    <li>LinkedIn</li>
+                    <li>Facebook</li>
+                </ul>
+            </div>
         </section>
     </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy;2022</p>
-    </footer>
 </body>
 
 </html>
