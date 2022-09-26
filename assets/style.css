@@ -10,7 +10,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
+/* header setting start */
 header {
     display: flex;
     justify-content:flex-start;
@@ -20,6 +20,7 @@ header {
     height: 200px;
 }
 
+/* add some personal style to my pic */
 #ying {
     border: 2px solid burlywood; 
     border-radius: 50%;
@@ -27,6 +28,7 @@ header {
     margin: 10px;
 }
 
+/* use syntax left-header and right-header to divide the header into two sections */
 header .left-header {
     display: flex;
     align-items: center;
@@ -68,16 +70,16 @@ header div ul li:hover {
 header div ul li a {
     color: aquamarine;
     text-decoration: underline;
-}
-/* header setting end */
+} /* header setting end */
+
 
 /* navbar start from here */
+/* style my navbar */
 nav {
     display: flex;
     align-items: end;
     justify-content: flex-end;
-    background-color: beige;
-    background-image: url("./images/oil-painting.jpg");/*must have?*/ 
+    background-image: url("./images/oil-painting.jpg"); 
     background-position: center;
     background-size: 100%;
     height: 300px;
@@ -90,8 +92,8 @@ nav {
     top: -20px;
     left: -20px;
     font-size: 20px;
-}
-/* navbar end*/
+} /* navbar end*/
+
 
 /* apply to all li */
 li {
@@ -100,6 +102,7 @@ li {
     padding: 0;
 }
 
+/* the main start at here */
 main {
     width: 100%;
     display: inline-block;
@@ -113,6 +116,7 @@ section {
     margin-bottom: 50px;
 }
 
+/* h2 style set up */
 main h2 {
     padding-right: 27px;
     font-size: 48px;
@@ -123,6 +127,7 @@ main h2 {
 
 }
 
+/* design the layout of main part */
 .content {
     width: 100%;
     max-width: 60%;
@@ -131,7 +136,8 @@ main h2 {
     font-size: 30px;
 }
 
-
+/* section for work */
+/* position the .card, .company into the right location for the layout */ 
 .card {
     position: relative;
     border: 8px solid cadetblue;
@@ -144,6 +150,7 @@ main h2 {
     transition: all;
 }
 
+/* add function to make it responsive when mouse is on top of the object */
 .card img:hover {
     opacity: 1;
 }
@@ -188,6 +195,7 @@ main h2 {
     /* height: 20vh; */
 }
 
+/* section for contact-me */
 #contact-me ul {
     display:flex;
     justify-content:center;
@@ -206,11 +214,15 @@ main h2 {
     color:  rgb(51, 85, 86);
 }
 
+/* add function to make it responsive when mouse is on top of the object */
 #contact-me ul li:hover {
     border: 2px solid burlywood; 
     border-radius: 50%;
     background-color: darkcyan;
-}
+} /* the main end */
+
+
+/* add a function that the website will adapt the layout to user's viewport, base on their display size */
 
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {
@@ -231,6 +243,8 @@ main h2 {
     }
     
 }
+
+
 
 /* Large smartphones - header changes color */
 @media screen and (max-width:768px) {
