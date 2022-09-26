@@ -26,7 +26,8 @@ header {
     margin: 10px;
 }
 
-/* use syntax left-header and right-header to divide the header into two sections */
+/* use syntax left-header and right-header 
+to divide the header into two sections */
 header .left-header {
     display: flex;
     align-items: center;
@@ -167,8 +168,6 @@ main h2 {
     font-size: 20px;
 }
 
-
-
 #card1 {
     width: 100%
 }
@@ -184,17 +183,9 @@ main h2 {
 }
 
 
-/* 
-#card1{
-    background-image: url('./images/dupont.jpeg');
-    height: 20vh;
-    width: 100%;
-} */
-
 .job1  {
     display: block;
     width: 100%;
-    /* height: 20vh; */
 }
 
 /* section for contact-me */
@@ -225,9 +216,9 @@ main h2 {
 } /* the main end */
 
 
-/* add a function that the website will adapt the layout to user's viewport, base on their display size */
-
-/* Tablets - header changes color */
+/* add settings that the website will adapt the layout to user's viewport, 
+base on their display size */
+/* suitable for tablets screen */
 @media screen and (max-width: 992px) {
     header {
         background-color: chocolate;
@@ -267,7 +258,7 @@ main h2 {
 
 
 
-/* Large smartphones - header changes color */
+/* suitable for Large smartphones */
 @media screen and (max-width:768px) {
     header {
         background-color: cornsilk;
@@ -316,7 +307,7 @@ main h2 {
 
 
 
-/* Small smartphones - header change color */
+/* suitable for mall smartphones */
 @media screen and (max-width: 576px) {
     header {
         background-color: rosybrown ;

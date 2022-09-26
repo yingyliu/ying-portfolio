@@ -1,6 +1,6 @@
 # ying-portfolio
 
-![homepage](.)
+![portfolio-homepage](./assets/images/portfolio-homepage.png)
 
 ## Description
 This website is about me and my past working experience. For the layout, I tried my best to resemble as the layout from the .gif of the homework.
