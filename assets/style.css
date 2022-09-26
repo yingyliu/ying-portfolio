@@ -10,7 +10,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* header layout and content placement start from here */
+
 header {
     display: flex;
     justify-content:flex-start;
@@ -155,6 +155,11 @@ main h2 {
     padding: 15px;
 }
 
+.company a {
+    text-decoration: none;
+    color: black;
+}
+
 #card1 {
     width: 100%
 }
@@ -170,9 +175,17 @@ main h2 {
 }
 
 
+/* 
+#card1{
+    background-image: url('./images/dupont.jpeg');
+    height: 20vh;
+    width: 100%;
+} */
+
 .job1  {
     display: inline-block;
     width: 100%;
+    /* height: 20vh; */
 }
 
 #contact-me ul {
@@ -203,6 +216,18 @@ main h2 {
 @media screen and (max-width: 992px) {
     header {
         background-color: chocolate;
+        font-size: 36px;
+    }
+
+    section h2 {
+        font-size: 36px;
+    }
+
+    .content,
+    .company {
+        display:flex;
+        flex-direction: column;
+
     }
     
 }
@@ -211,6 +236,18 @@ main h2 {
 @media screen and (max-width:768px) {
     header {
         background-color: cornsilk;
+        font-size: 24px;
+
+    }
+
+    section h2 {
+        font-size: 24px;
+    }
+
+    .content,
+    .company {
+        display: flex;
+        flex-direction: column;
 
     }
 }
@@ -219,6 +256,18 @@ main h2 {
 @media screen and (max-width: 576px) {
     header {
         background-color: rosybrown ;
+        font-size: 18px;
+    }
+
+    section h2 {
+        font-size: 18px;
+    }
+
+    .content,
+    .company {
+        display:flex;
+        flex-direction: column;
+
     }
     
 }
