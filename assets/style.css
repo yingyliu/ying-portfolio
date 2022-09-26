@@ -5,8 +5,7 @@
 }
 
 body {
-    /* background-color: blanchedalmond; */
-    background-color: grey;
+    background-color: blanchedalmond;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -17,7 +16,6 @@ header {
     align-items: center;
     background-color: cadetblue;
     color: white;
-    height: 200px;
 }
 
 /* add some personal style to my pic */
@@ -106,7 +104,7 @@ li {
 main {
     width: 100%;
     display: inline-block;
-    margin: 20px;
+    padding: 20px;
 }
 
 section {
@@ -114,13 +112,16 @@ section {
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* h2 style set up */
 main h2 {
     padding-right: 27px;
     font-size: 48px;
-    width: 510px;
+    width: 200px;
     text-align:right;
     align-self: flex-start;
     color:darkcyan;
@@ -130,7 +131,7 @@ main h2 {
 /* design the layout of main part */
 .content {
     width: 100%;
-    max-width: 60%;
+    max-width: 80%;
     border-left: 5px solid darkcyan;
     padding-left: 50px;
     font-size: 30px;
@@ -160,12 +161,13 @@ main h2 {
     position:absolute;
     bottom: 30px;
     padding: 15px;
-}
-
-.company a {
+    z-index: 1;
     text-decoration: none;
     color: black;
+    font-size: 20px;
 }
+
+
 
 #card1 {
     width: 100%
@@ -177,7 +179,7 @@ main h2 {
 }
 
 .job { 
-    display: inline-block;
+    display: block;
     width: 100%;
 }
 
@@ -190,7 +192,7 @@ main h2 {
 } */
 
 .job1  {
-    display: inline-block;
+    display: block;
     width: 100%;
     /* height: 20vh; */
 }
@@ -198,6 +200,7 @@ main h2 {
 /* section for contact-me */
 #contact-me ul {
     display:flex;
+    flex-wrap: wrap;
     justify-content:center;
     font-size: 32px;
 }
@@ -228,6 +231,15 @@ main h2 {
 @media screen and (max-width: 992px) {
     header {
         background-color: chocolate;
+       
+    }
+
+    header div ul {
+        font-size: 36px;
+
+    }
+
+    .left-header h1 {
         font-size: 36px;
     }
 
@@ -235,12 +247,21 @@ main h2 {
         font-size: 36px;
     }
 
-    .content,
-    .company {
-        display:flex;
-        flex-direction: column;
-
+    .content {
+        font-size: 24px;
     }
+
+    .company {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    #contact-me div ul li a {
+        font-size: 30px;
+    }
+
+  
+
     
 }
 
@@ -250,39 +271,82 @@ main h2 {
 @media screen and (max-width:768px) {
     header {
         background-color: cornsilk;
+
+    }
+
+    header div ul {
         font-size: 24px;
 
+    }
+
+    .left-header h1 {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 14px;
     }
 
     section h2 {
         font-size: 24px;
     }
 
-    .content,
-    .company {
-        display: flex;
-        flex-direction: column;
+    .content-card {
+        flex-wrap: wrap;
+    }
 
+    .card {
+        width: 100%;
+    }
+
+    .company {
+        bottom: 15px;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .content {
+        font-size: 18px;
+    }
+
+    #contact-me div ul li a {
+        font-size: 24px;
     }
 }
+
+
 
 /* Small smartphones - header change color */
 @media screen and (max-width: 576px) {
     header {
         background-color: rosybrown ;
+        
+    }
+
+    header div ul {
         font-size: 18px;
+    }
+
+    .left-header h1 {
+        font-size: 18px;
+    }
+
+    .subtitle {
+        font-size: 12px;
     }
 
     section h2 {
         font-size: 18px;
     }
 
-    .content,
-    .company {
-        display:flex;
-        flex-direction: column;
-
+    .content {
+        font-size: 14px;
     }
+
+    #contact-me div ul li a {
+        font-size: 18px;
+    }
+
     
 }
 
