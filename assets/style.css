@@ -307,7 +307,7 @@ base on their display size */
 
 
 
-/* suitable for mall smartphones */
+/* suitable for small smartphones */
 @media screen and (max-width: 576px) {
     header {
         background-color: rosybrown ;
