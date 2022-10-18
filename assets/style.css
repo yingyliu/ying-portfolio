@@ -188,6 +188,33 @@ main h2 {
     width: 100%;
 }
 
+/* section for projects */ 
+#projects ul {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    font-size: 32px;
+}
+
+#projects ul li {
+    display: inline-block;
+    padding: 40px;
+    text-decoration: underline;
+    color:  rgb(51, 85, 86);
+}
+
+#projects ul li a {
+    text-decoration: underline;
+    color:  rgb(51, 85, 86);
+}
+
+/* add function to make it responsive when mouse is on top of the object */
+#projects ul li:hover {
+    border: 2px solid burlywood; 
+    border-radius: 50%;
+    background-color: darkcyan;
+} 
+
 /* section for contact-me */
 #contact-me ul {
     display:flex;
@@ -213,7 +240,8 @@ main h2 {
     border: 2px solid burlywood; 
     border-radius: 50%;
     background-color: darkcyan;
-} /* the main end */
+} 
+/* the main end */
 
 
 /* add settings that the website will adapt the layout to user's viewport, 
